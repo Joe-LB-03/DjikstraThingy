@@ -13,7 +13,7 @@ public class DijkstraShortestPath
 {
     public void computeShortestPaths(final Node sourcenode) {
         sourcenode.setDistance(0);
-        final PriorityQueue<Node> priorityQueue = new PriorityQueue<>();
+        final PriorityQueue<Node> priorityQueue = new PriorityQueue<Node>();
         priorityQueue.add(sourcenode);
         sourcenode.setVisited(true);
         while (!priorityQueue.isEmpty()) {
